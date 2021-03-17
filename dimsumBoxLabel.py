@@ -6,7 +6,7 @@ numberPrint = int(numberPrint)
 label = zpl.Label(220,100)
 label.origin(5,0)
 label.set_darkness(30)
-label.write_graphic(Image.open('FamilyBox.png'), width = 100)
+label.write_graphic(Image.open('/Users/jianxiongwu/Documents/Python/Github/printLabel/towGatherBoxLabel.png'), width = 100)
 label.endorigin()
 printStr = bytes(label.dumpZPL(), encoding='utf8')
 
