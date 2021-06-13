@@ -15,12 +15,7 @@ text_file = open("printLabel.zpl", "wb")
 text_file.write(printStr)
 text_file.close()
 
-textLabel = ['Cucumber Salad',
-'Pak Choi',
-'Wok Noodle',
-'Veg. Big Bao',
-'Veg. Gaozi Boil',
-'Veg. Gaozi Pan Fry']
+textLabel = ['Xiao Long Bao']
 
 labelText = zpl.Label(57,57)
 labelText.origin(25,25)
@@ -31,6 +26,7 @@ text_file = open("textLabel.zpl", "wb")
 text_file.write(printStr)
 text_file.close()
 nPrint = input('Number of prints : ')
+
 for i in range(int(nPrint)):
     for item in textLabel:
         labelText = zpl.Label(57,57)
